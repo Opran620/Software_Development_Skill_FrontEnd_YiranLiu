@@ -4,7 +4,7 @@ Coding project and exercise that in Web programming for Course Front-End in LUT 
 
 This is the readme file about my course project
 
-**24/7 Fitness: A Modern Web Development Case Study**
+# **24/7 Fitness: A Modern Web Development Case Study**
 
 **Abstract**
 
