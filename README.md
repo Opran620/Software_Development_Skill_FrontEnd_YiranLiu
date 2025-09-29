@@ -5,6 +5,7 @@ Coding project and exercise that in Web programming for Course Front-End in LUT 
 This is the readme file about my course project
 
 **24/7 Fitness: A Modern Web Development Case Study**
+
 **Abstract**
 This project presents a comprehensive fitness website implementation that demonstrates contemporary web development methodologies. The platform serves as an academic case study in responsive design, user experience optimization, and modern front-end development practices. Developed using semantic HTML5, advanced CSS3 features, and vanilla JavaScript, this implementation showcases practical application of web standards while addressing real-world usability requirements in the fitness industry domain.
 
