@@ -1,0 +1,416 @@
+/* =========================================================
+   Global Reset & Variables
+   ---------------------------------------------------------
+   - 统一浏览器默认样式
+   - 定义项目通用的颜色变量与字体
+   ========================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* 主题色，修改这里可快速换全站主色 */
+  --accent-color: #4a90e2;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+  --body-font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================================
+   Navigation Bar
+   - Flex 布局左右分布
+   - hover 时使用主题色
+   ========================================================= */
+.navbar {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--accent-color);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+/* =========================================================
+   Hero Section
+   - 大图背景+居中内容
+   ========================================================= */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  background: url('../images/hero-bg.png') no-repeat center bottom;
+  background-size: contain;
+  height: 550px;
+}
+
+.hero .hero-content,
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   Video Section
+   - 纵向居中
+   ========================================================= */
+.video {
+  padding: 20px 0 40px;
+}
+
+.video .video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video .video-preview {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* =========================================================
+   Testimonials
+   - 三列响应式网格
+   ========================================================= */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   Pricing Section
+   ========================================================= */
+.pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.pricing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* =========================================================
+   FAQ Accordion
+   ========================================================= */
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.faq .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq .faq-group-header h4 {
+  font-weight: 600;
+  width: 90%;
+}
+
+.faq .faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+}
+
+.faq .faq-group-body {
+  display: none;
+  line-height: 1.6;
+}
+
+.faq .faq-group-body.open {
+  display: block;
+}
+
+/* Tabs inside FAQ */
+.faq ul.faq-menu {
+  max-width: 420px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  background: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+.footer {
+  padding: 40px 0;
+  background: #111;
+  color: #ccc;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.footer a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/* =========================================================
+   Utilities & Reusable Components
+   ========================================================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Typography helpers */
+.text-xxl { font-size: 3rem; font-weight: 600; margin: 40px 0 20px; }
+.text-xl  { font-size: 2.2rem; margin: 40px 0 20px; }
+.text-lg  { font-size: 1.8rem; margin: 30px 0 20px; }
+.text-md  { font-size: 1.2rem; margin: 20px 0 10px; }
+.text-sm  { font-size: 0.9rem; margin: 10px 0 5px; }
+.text-center { text-align: center; }
+
+/* Background helpers */
+.bg-primary { background: var(--accent-color); color: #fff; }
+.bg-light   { background: var(--light-color); color: #333; }
+.bg-dark    { background: var(--dark-color); color: #fff; }
+.bg-black   { background: #000; color: #fff; }
+
+/* =========================================================
+   Mobile Menu / Hamburger
+   ========================================================= */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.15);
+  transition: right 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.mobile-menu.active { right: 0; }
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+.mobile-menu ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* =========================================================
+   Responsive Breakpoints
+   ========================================================= */
+@media (max-width: 960px) {
+  .text-xxl { font-size: 2.5rem; }
+}
+
+@media (max-width: 670px) {
+  .navbar .main-menu { display: none; }
+  .navbar .hamburger-button { display: block; }
+
+  .hero .container {
+    background: url('../images/hero-bg-mobile.png') no-repeat bottom;
+    background-size: 350px 400px;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-xxl { font-size: 2rem; }
+}
