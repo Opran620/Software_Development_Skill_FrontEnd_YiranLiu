@@ -28,9 +28,9 @@ This project presents a comprehensive fitness website implementation that demons
   
   Illustrate performance optimization strategies in front-end development
 
-**2. Architectural Implementation
+**2. Architectural Implementation**
 
-  2.1 Project Structure**
+  **2.1 Project Structure**
   
     text
     fitness-website/
