@@ -139,10 +139,10 @@ This project presents a comprehensive fitness website implementation that demons
   Direct File Access
   
   bash
-  # Navigate to project directory
+  Navigate to project directory
   cd fitness-website
   
-  # Open primary document in default browser
+  Open primary document in default browser
   open index.html
 
 **6. Future Improve Directions**
