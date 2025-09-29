@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document Basic Settings -->
+  <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 for multilingual support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag for proper mobile rendering -->
+  <title>24/7 Fitness - Your Ultimate Workout Destination</title> <!-- Page title shown in browser tab -->
+  
+  <!-- External Resources -->
+  <!-- Google Fonts - Poppins font for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome - Icon library for various icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============================================= -->
+  <!-- NAVIGATION SECTION - Uses Flexbox Layout -->
+  <!-- ============================================= -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- Website Logo -->
+      <div class="logo">
+        <a href="#home">
+          <i class="fas fa-dumbbell"></i> <!-- Dumbbell icon -->
+          24/7 Fitness <!-- Website name -->
+        </a>
+      </div>
+      
+      <!-- Desktop Menu - Uses Flexbox Layout -->
+      <ul class="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a class="btn btn-primary" href="#contact">Get Started</a></li> <!-- Primary call-to-action button -->
+      </ul>
+      
+      <!-- Mobile Menu Button - Hamburger Menu -->
+      <button class="hamburger-button" aria-label="Toggle menu">
+        <!-- Three lines for hamburger menu -->
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu - Hidden off-screen, slides in when activated -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a class="btn btn-primary" href="#contact">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================= -->
+  <!-- HERO SECTION - Uses Flexbox Layout -->
+  <!-- ============================================= -->
+  <section class="hero" id="home">
+    <div class="container">
+      <!-- Left Content Area -->
+      <div class="hero-content">
+        <h1>Transform Your Body, Transform Your Life</h1> <!-- Main headline -->
+        <p>Join our 24/7 fitness community and achieve your goals with state-of-the-art equipment, expert trainers, and flexible membership options.</p> <!-- Description text -->
+        
+        <!-- Call-to-Action Buttons -->
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary">Start Your Journey</a> <!-- Primary button -->
+          <a href="#classes" class="btn btn-secondary">View Classes</a> <!-- Secondary button -->
+        </div>
+        
+        <!-- Statistics Display -->
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>5000+</h3> <!-- Member count -->
+            <p>Happy Members</p>
+          </div>
+          <div class="stat">
+            <h3>24/7</h3> <!-- Operating hours -->
+            <p>Gym Access</p>
+          </div>
+          <div class="stat">
+            <h3>50+</h3> <!-- Trainer count -->
+            <p>Expert Trainers</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Image Area -->
+      <div class="hero-image">
+        <div class="image-placeholder">
+          <i class="fas fa-dumbbell"></i> <!-- Placeholder icon -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- ABOUT SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <section class="about section bg-light" id="about">
+    <div class="container">
+      <!-- Section Header and Description -->
+      <div class="section-header">
+        <h2>Why Choose 24/7 Fitness?</h2>
+        <p>We're committed to helping you achieve your fitness goals with the best facilities and support.</p>
+      </div>
+      
+      <!-- Features Grid - Uses CSS Grid Layout -->
+      <div class="features-grid">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i> <!-- Clock icon -->
+          </div>
+          <h3>24/7 Access</h3>
+          <p>Work out on your schedule with round-the-clock gym access.</p>
+        </div>
+        
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-dumbbell"></i> <!-- Dumbbell icon -->
+          </div>
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art fitness equipment for all your workout needs.</p>
+        </div>
+        
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i> <!-- Users icon -->
+          </div>
+          <h3>Expert Trainers</h3>
+          <p>Certified personal trainers to guide and motivate you.</p>
+        </div>
+        
+        <!-- Feature Card 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i> <!-- Heart icon -->
+          </div>
+          <h3>Group Classes</h3>
+          <p>Various group fitness classes for all skill levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CLASSES SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <section class="classes section" id="classes">
+    <div class="container">
+      <!-- Section Header and Description -->
+      <div class="section-header">
+        <h2>Our Fitness Classes</h2>
+        <p>Find the perfect class for your fitness journey</p>
+      </div>
+      
+      <!-- Classes Grid - Uses CSS Grid Layout -->
+      <div class="classes-grid">
+        <!-- Class Card 1 - HIIT Training -->
+        <div class="class-card">
+          <div class="class-icon">
+            <i class="fas fa-fire"></i> <!-- Fire icon -->
+          </div>
+          <h3>HIIT Training</h3>
+          <p>High-intensity interval training for maximum calorie burn.</p>
+          <ul class="class-features">
+            <li><i class="fas fa-check"></i> 45-minute sessions</li>
+            <li><i class="fas fa-check"></i> All fitness levels</li>
+            <li><i class="fas fa-check"></i> Full-body workout</li>
+          </ul>
+        </div>
+        
+        <!-- Class Card 2 - Yoga & Pilates -->
+        <div class="class-card">
+          <div class="class-icon">
+            <i class="fas fa-spa"></i> <!-- Spa icon -->
+          </div>
+          <h3>Yoga & Pilates</h3>
+          <p>Improve flexibility, balance, and mental clarity.</p>
+          <ul class="class-features">
+            <li><i class="fas fa-check"></i> 60-minute sessions</li>
+            <li><i class="fas fa-check"></i> Beginner to advanced</li>
+            <li><i class="fas fa-check"></i> Mind-body connection</li>
+          </ul>
+        </div>
+        
+        <!-- Class Card 3 - Strength Training -->
+        <div class="class-card">
+          <div class="class-icon">
+            <i class="fas fa-weight-hanging"></i> <!-- Weight icon -->
+          </div>
+          <h3>Strength Training</h3>
+          <p>Build muscle and increase strength with guided workouts.</p>
+          <ul class="class-features">
+            <li><i class="fas fa-check"></i> Personalized programs</li>
+            <li><i class="fas fa-check"></i> Equipment training</li>
+            <li><i class="fas fa-check"></i> Progress tracking</li>
+          </ul>
+        </div>
+        
+        <!-- Class Card 4 - Cardio Training -->
+        <div class="class-card">
+          <div class="class-icon">
+            <i class="fas fa-running"></i> <!-- Running icon -->
+          </div>
+          <h3>Cardio Blast</h3>
+          <p>Boost endurance and cardiovascular health.</p>
+          <ul class="class-features">
+            <li><i class="fas fa-check"></i> 30-45 minute sessions</li>
+            <li><i class="fas fa-check"></i> Various intensity levels</li>
+            <li><i class="fas fa-check"></i> Fun group atmosphere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- TRAINERS SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <section class="trainers section bg-dark" id="trainers">
+    <div class="container">
+      <!-- Section Header and Description -->
+      <div class="section-header">
+        <h2>Meet Our Expert Trainers</h2>
+        <p>Professional trainers dedicated to your success</p>
+      </div>
+      
+      <!-- Trainers Grid - Uses CSS Grid Layout -->
+      <div class="trainers-grid">
+        <!-- Trainer Card 1 -->
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sarah Johnson">
+          </div>
+          <h3>Sarah Johnson</h3>
+          <p class="trainer-specialty">HIIT & Strength Training</p>
+          <p class="trainer-bio">5+ years experience in functional training and weight loss programs.</p>
+        </div>
+        
+        <!-- Trainer Card 2 -->
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1534367507877-0edd93bd013b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Mike Chen">
+          </div>
+          <h3>Mike Chen</h3>
+          <p class="trainer-specialty">Yoga & Mobility</p>
+          <p class="trainer-bio">Certified yoga instructor with expertise in mobility and flexibility.</p>
+        </div>
+        
+        <!-- Trainer Card 3 -->
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Emily Davis">
+          </div>
+          <h3>Emily Davis</h3>
+          <p class="trainer-specialty">Cardio & Nutrition</p>
+          <p class="trainer-bio">Sports nutrition specialist and marathon runner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PRICING SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <section class="pricing section bg-light" id="pricing">
+    <div class="container">
+      <!-- Section Header and Description -->
+      <div class="section-header">
+        <h2>Membership Plans</h2>
+        <p>Choose the plan that fits your fitness journey</p>
+      </div>
+      
+      <!-- Pricing Grid - Uses CSS Grid Layout -->
+      <div class="pricing-grid">
+        <!-- Basic Plan Card -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Basic</h3>
+            <div class="price">$29<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Gym Access (5AM-11PM)</li>
+            <li><i class="fas fa-check"></i> Basic Equipment</li>
+            <li><i class="fas fa-check"></i> Locker Room</li>
+            <li><i class="fas fa-times"></i> Group Classes</li>
+            <li><i class="fas fa-times"></i> Personal Trainer</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Get Started</a>
+        </div>
+        
+        <!-- Premium Plan Card - Featured -->
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="price">$49<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+            <li><i class="fas fa-check"></i> All Equipment</li>
+            <li><i class="fas fa-check"></i> All Group Classes</li>
+            <li><i class="fas fa-check"></i> 2 Personal Training Sessions</li>
+            <li><i class="fas fa-check"></i> Nutrition Planning</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+        
+        <!-- Pro Plan Card -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Pro</h3>
+            <div class="price">$79<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Everything in Premium</li>
+            <li><i class="fas fa-check"></i> Unlimited Personal Training</li>
+            <li><i class="fas fa-check"></i> Custom Workout Plans</li>
+            <li><i class="fas fa-check"></i> Progress Tracking</li>
+            <li><i class="fas fa-check"></i> Priority Booking</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONTACT SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <!-- Contact Grid - Uses CSS Grid Layout -->
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>Ready to Start Your Fitness Journey?</h2>
+          <p>Visit us today for a free tour and consultation.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>123 Fitness Street, Sport City</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@24fitness.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Hours</h4>
+                <p>24/7 for Premium Members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Get Your Free Pass</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="">Interested In...</option>
+                <option value="basic">Basic Membership</option>
+                <option value="premium">Premium Membership</option>
+                <option value="pro">Pro Membership</option>
+                <option value="classes">Group Classes</option>
+                <option value="training">Personal Training</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get Free Pass</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER SECTION - Uses CSS Grid Layout -->
+  <!-- ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Content Grid -->
+      <div class="footer-content">
+        <!-- Company Information -->
+        <div class="footer-section">
+          <div class="logo">
+            <a href="#home">
+              <i class="fas fa-dumbbell"></i>
+              24/7 Fitness
+            </a>
+          </div>
+          <p>Your journey to a healthier lifestyle starts here. Join our community today!</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services Links -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Personal Training</a></li>
+            <li><a href="#">Group Classes</a></li>
+            <li><a href="#">Nutrition Planning</a></li>
+            <li><a href="#">Corporate Wellness</a></li>
+            <li><a href="#">Online Coaching</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street</li>
+            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@24fitness.com</li>
+            <li><i class="fas fa-clock"></i> Open 24/7</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 24/7 Fitness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
